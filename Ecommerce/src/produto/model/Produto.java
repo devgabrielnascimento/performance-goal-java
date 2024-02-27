@@ -88,7 +88,7 @@ public abstract class Produto {
 		System.out.println("Nome do produto: " + getNome());
 		System.out.println("Categoria: " + categoria);
 		System.out.println("Data de fabricação: " + getFabricacao());
-		System.out.println("Saldo da conta: " + getValidade());
+		System.out.println("Data de validade: " + getValidade());
 		System.out.println("Preço: " + getPreco());
 	}
 }
