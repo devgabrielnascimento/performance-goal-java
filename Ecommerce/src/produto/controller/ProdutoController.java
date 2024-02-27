@@ -18,17 +18,24 @@ public class ProdutoController implements ProdutoRepository {
 			produto.verInformacoes();
 		} else
 			System.out.println("O produto ID: " + produto + " não foi encontrado!");
+			
+			
 		
 	};
 
 	@Override
-	public void listarTodasProdutos() {
-		
+	public void listarTodosProdutos() {
+		if (listaProdutos.size() == 0) {
+			System.out.println("Lista vazia!");
+		} else if(listaProdutos.size() == 1)
+			System.out.println("Foi encontrado: [" + listaProdutos.size() + "] produto!");
+		else 
+			System.out.println("Foram encontrados [" + listaProdutos.size() + "] produtos!");
 		for (Produto produto : listaProdutos) {
 			produto.verInformacoes();
-		}
-		
-	};
+
+			}
+		};
 
 	@Override
 	public void cadastrarProduto(Produto produto) {
@@ -56,10 +63,12 @@ public class ProdutoController implements ProdutoRepository {
 		if (produto != null) {
 			
 			if (listaProdutos.remove(produto) == true)
-				System.out.println("O produto ID:  " + produto + " foi deletado com sucesso! ");
+				System.out.println("O produto ID:  " + produto.getId() + " foi deletado com sucesso! ");
 		} else
 			
 			System.out.println("O produto ID: " + produto + " não foi encontrado!");
+		
+		
 		
 		
 	};

@@ -1,5 +1,7 @@
 package produto.model;
 
+import produto.entidades.Cliente;
+
 public abstract class Produto {
 
 	private int id;
@@ -8,7 +10,9 @@ public abstract class Produto {
 	private String fabricacao;
 	private String validade;
 	private float preco;
-
+	
+	private Cliente cliente;
+	
 	
 	public Produto(int id, int categoria, String nome, String fabricacao, String validade, float preco) {
 		super();
@@ -19,6 +23,24 @@ public abstract class Produto {
 		this.validade = validade;
 		this.preco = preco;
 	}
+	
+	
+	
+
+	public Produto(int id, int categoria, String nome, String fabricacao, String validade, float preco,
+			Cliente cliente) {
+		super();
+		this.id = id;
+		this.categoria = categoria;
+		this.nome = nome;
+		this.fabricacao = fabricacao;
+		this.validade = validade;
+		this.preco = preco;
+		this.cliente = cliente;
+	}
+
+
+
 
 	public int getId() {
 		return id;
@@ -83,7 +105,7 @@ public abstract class Produto {
 
 		System.out.println("--------------------------------");
 		System.out.println("-- Informações do produto: --");
-		System.out.println("");
+		System.out.println("--------------------------------");
 		System.out.println("ID do produto: " + getId());
 		System.out.println("Nome do produto: " + getNome());
 		System.out.println("Categoria: " + categoria);
