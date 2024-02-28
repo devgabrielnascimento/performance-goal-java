@@ -25,4 +25,36 @@ public class Vendedor extends Usuario {
 		System.out.println("--------------------------------");
 	}
 
+	public String getUsuario() {
+		return usuario;
+	}
+
+	public void setUsuario(String usuario) {
+		this.usuario = usuario;
+	}
+
+	public String getSenha() {
+		return senha;
+	}
+
+	public void setSenha(String senha) {
+		this.senha = senha;
+	}
+
+	public String getOcupacao() {
+		return ocupacao;
+	}
+
+	public void setOcupacao(String ocupacao) {
+		this.ocupacao = ocupacao;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+
 }
