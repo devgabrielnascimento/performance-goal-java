@@ -42,7 +42,7 @@ public class Menu {
 		System.out.println("                                               ");
 		System.out.print("\nDigite o seu usuário: ");
 		nmUsuario = sc.nextLine();
-		System.out.print("\nSenha:");
+		System.out.print("\nSenha: ");
 		senha = sc.nextLine();
 
 		for (Usuario usuario : listaUsuarios) {
