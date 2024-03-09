@@ -37,9 +37,9 @@ public class Menu {
 		listaUsuarios.add(vendedor);
 		listaUsuarios.add(cliente);
 		
-		System.out.println("                                             ");
-		System.out.println("------------------ LOGIN ------------------: ");
-		System.out.println("                                             ");
+		System.out.println("                                               ");
+		System.out.println("------------------- LOGIN -------------------: ");
+		System.out.println("                                               ");
 		System.out.print("\nDigite o seu usuário: ");
 		nmUsuario = sc.nextLine();
 		System.out.print("\nSenha:");
